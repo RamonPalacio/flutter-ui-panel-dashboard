@@ -29,7 +29,7 @@ class _WidgetTreeState extends State<WidgetTree> {
         preferredSize: Size(double.infinity, 100),
         child: (ResponsiveLayout.isTinyLimit(context) ||
                 ResponsiveLayout.isTinyHeightLimit(context))
-            ? Container()
+            ? const SizedBox()
             : AppBarWidget(),
       ),
       body: ResponsiveLayout(
